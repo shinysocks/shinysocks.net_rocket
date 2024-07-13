@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter');
+
+  * {
+    background-color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 100px;
+    color: #34257a;
+    font-weight: 800;
+  }
+
+  #txt {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
+
+<body onload="startTime()">
+  <div id="txt"></div>
+  <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
+</body>
+
+</html>

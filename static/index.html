@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- made and hosted by Noah Dinan aka shinysocks -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/favicon.webp">
+  <title>Noah Dinan</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+    body {
+      background-color: #b4befe;
+      font-family: 'Inter', sans-serif;
+      font-size: x-large;
+    }
+
+    #section {
+      position: absolute;
+      text-align: center;
+      background-color: black;
+      align-items: center;
+      padding: 25px;
+      border-radius: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #pfp {
+      width: 130px;
+      border-radius: 100px;
+      margin-top: 10px;
+    }
+
+    #title {
+      color: #45475a;
+      text-align: center;
+      width: 500px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      #title {
+        width: 300px;
+      }
+    }
+
+    .top-icon {
+      margin: 8px;
+      border-width: 0px;
+      border-radius: 10px;
+      width: 55px;
+      height: 55px;
+      filter: brightness(0) saturate(100%) invert(86%) sepia(22%) saturate(4865%) hue-rotate(189deg) brightness(103%) contrast(99%);
+    }
+
+    .top-icon:hover {
+      background-color: #45475a;
+    }
+
+    #linkedin {
+      background: url("images/linkedin.svg") no-repeat;
+      background-size: 40px;
+      background-position: center;
+    }
+
+    #mail {
+      background: url("images/mail.svg") no-repeat;
+      background-size: 40px;
+      background-position: center;
+    }
+
+    #github {
+      background: url("images/github.svg") no-repeat;
+      background-size: 40px;
+      background-position: center;
+    }
+
+    #itch {
+      background: url("images/itch.svg") no-repeat;
+      background-size: 40px;
+      background-position: center;
+    }
+
+    #steam {
+      background: url("images/steam.svg") no-repeat;
+      background-size: 40px;
+      background-position: center;
+    }
+
+    #resume {
+      background: url("images/resume.svg") no-repeat;
+      background-size: 40px;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="section">
+    <img id="pfp" src="images/pfp.webp" alt="noah">
+    <h1 id="title">hey, i'm shinysocks!</h1>
+
+    <div>
+      <a href="https://github.com/shinysocks" target="_blank"><button id="github" class="top-icon"></button></a>
+      <a href="resume.pdf" target="_blank"><button id="resume" class="top-icon"></button></a>
+      <a href="https://linkedin.com/in/noah-dinan" target="_blank"><button id="linkedin" class="top-icon"></button></a>
+      <a href="mailto:noah@shinysocks.net" target="_blank"><button id="mail" class="top-icon"></button></a>
+      <a href="https://shinysocks.itch.io" target="_blank"><button id="itch" class="top-icon"></button></a>
+      <a href="https://steamcommunity.com/profiles/76561199074928968/" target="_blank"><button id="steam"
+          class="top-icon"></button></a>
+    </div>
+  </div>
+</body>
+
+</html>
